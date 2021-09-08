@@ -34,28 +34,13 @@ app.set('view engine', '.hbs');
  * Setup static folders
  */
 app.use('/public', express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'images')));
+app.use('/images', express.static(path.join(__dirname, 'src/images')));
 
 /**
  * ROUTERS
  */
 
-// app.get('/trillo', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'views/trillo.html'));
-// });
-
-// app.get('/nexter', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'views/nexter.html'));
-// });
 app.use('/', webRouter);
-// app.get('/', (req, res) => {
-//     res.render('home');
-// });
-
-// app.get('/', (req, res) => {
-//     res.end('Hello World');
-// });
-
 
 /**
  * Serve application

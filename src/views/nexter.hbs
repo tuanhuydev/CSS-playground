@@ -9,34 +9,364 @@
 </head>
 <body class="container">
     <div class="sidebar">
-        Sidebar
+        <button class="nav-btn"></button>
     </div>
-    <header class="header">Header</header>
+    <header class="header">
+        <img src="/images/nexter/logo.png" alt="Nexter logo" class="header__logo">
+        <h3 class="heading-3">You own home:</h3>
+        <h1 class="heading-1">The Ultimate personal freedom</h1>
+        <button class="btn header__btn">View our properties</button>
+        <div class="header__seenon-text">As seen on</div>
+        <div class="header__seenon-logos">
+            <img src="images/nexter/logo-bbc.png" alt="Seen logo 1">
+            <img src="images/nexter/logo-forbes.png" alt="Seen logo 2">
+            <img src="images/nexter/logo-techcrunch.png" alt="Seen logo 3">
+            <img src="images/nexter/logo-bi.png" alt="Seen logo 4">
+        </div>
+    </header>
     <div class="realtors">
-        Top 3 realtors
+        <h3 class="heading-3 mb-sm">Top 3 realtors</h3>
+        <div class="realtors__list">
+            <img src="/images/nexter/realtor-1.jpeg" alt="realtor 1" class="realtors__img">
+            <div class="realtors__detail">
+                <h4 class="heading-4 heading-4--light">
+                    Erik Feiman
+                </h4>
+                <p class="realtors__sold">245 houses sold</p>
+            </div>
+            <img src="/images/nexter/realtor-2.jpeg" alt="realtor 1" class="realtors__img">
+            <div class="realtors__detail">
+                <h4 class="heading-4 heading-4--light ">
+                    Kim Brown
+                </h4>
+                <p class="realtors__sold">212 houses sold</p>
+            </div>
+            <img src="/images/nexter/realtor-3.jpeg" alt="realtor 1" class="realtors__img">
+            <div class="realtors__detail">
+                <h4 class="heading-4 heading-4--light">
+                    Tobey Ramsey
+                </h4>
+                <p class="realtors__sold">198 houses sold</p>
+            </div>
+        </div>
     </div>
     <section class="features">
-        <div class="feature">feature 1</div>
-        <div class="feature">feature 2</div>
-        <div class="feature">feature 3</div>
-        <div class="feature">feature 4</div>
-        <div class="feature">feature 5</div>
-        <div class="feature">feature 6</div>
+        <div class="feature">
+            <svg class="feature__icon">
+                <use xlink:href="/images/nexter/sprite.svg#icon-global"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--dark">World best luxury home</h4>
+            <p class="feature__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus.
+            </p>
+        </div>
+        <div class="feature">
+            <svg class="feature__icon">
+                <use xlink:href="/images/nexter/sprite.svg#icon-trophy"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--dark">Only the best price</h4>
+            <p class="feature__text">
+                Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.
+            </p>
+        </div>
+        <div class="feature">
+            <svg class="feature__icon">
+                <use xlink:href="/images/nexter/sprite.svg#icon-map-pin"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--dark">All home in top location</h4>
+            <p class="feature__text">
+                Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.
+            </p>
+        </div>
+        <div class="feature">
+            <svg class="feature__icon">
+                <use xlink:href="/images/nexter/sprite.svg#icon-key"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--dark">New home in one week</h4>
+            <p class="feature__text">
+                Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <div class="feature">
+            <svg class="feature__icon">
+                <use xlink:href="/images/nexter/sprite.svg#icon-presentation"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--dark">Top 1% realtors</h4>
+            <p class="feature__text">
+                Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio necessitatibus pariatur voluptatibus.
+            </p>
+        </div>
+        <div class="feature">
+            <svg class="feature__icon">
+                <use xlink:href="/images/nexter/sprite.svg#icon-lock"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--dark">Secure payment on Nexter</h4>
+            <p class="feature__text">
+                Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.
+            </p>
+        </div>
+       
     </section>
     <div class="story__pictures">
-        Story pictures
+        <img src="/images/nexter/story-1.jpeg" alt="Couple with new house" class="story__img--1">
+        <img src="/images/nexter/story-2.jpeg" alt="New house" class="story__img--2">
     </div>
     <div class="story__contents">
-        Story contents
+        <h3 class="heading-3 mb-sm">Happy customer</h3>
+        <h2 class="heading-2 heading-2--dark mb-md">&ldquo;The best desicion of our lifes&rdquo;</h2>
+        <p class="story__text mb-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!</p>
+        <button class="btn">Find your own home</button>
     </div>
     <section class="homes">
-        Homes
+        <div class="home">
+            <img src="/images/nexter/house-1.jpeg" alt="house 1" class="home__img">
+             <svg class="home__like">
+                <use xlink:href="/images/nexter/sprite.svg#icon-heart-full"></use>
+            </svg>
+            <h5 class="home__name">Beautiful House</h5>
+            <div class="home__location">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-map-pin"></use>
+                </svg>
+                <p>USA</p>
+            </div>
+            <div class="home__rooms">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-profile-male"></use>
+                </svg>
+                <p>5 rooms</p>
+            </div>
+            <div class="home__area">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-expand"></use>
+                </svg>
+                <p>325 m<sup>2</sup></p>
+            </div>
+            <div class="home__price">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-key"></use>
+                </svg>
+                <p>$1,200,000</p>
+            </div>
+            <button class="btn home__btn">contact realtor</button>
+        </div>
+        <div class="home">
+            <img src="/images/nexter/house-2.jpeg" alt="house 2" class="home__img">
+             <svg class="home__like">
+                <use xlink:href="/images/nexter/sprite.svg#icon-heart-full"></use>
+            </svg>
+            <h5 class="home__name">Beautiful House</h5>
+            <div class="home__location">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-map-pin"></use>
+                </svg>
+                <p>USA</p>
+            </div>
+            <div class="home__rooms">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-profile-male"></use>
+                </svg>
+                <p>5 rooms</p>
+            </div>
+            <div class="home__area">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-expand"></use>
+                </svg>
+                <p>325 m<sup>2</sup></p>
+            </div>
+            <div class="home__price">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-key"></use>
+                </svg>
+                <p>$1,200,000</p>
+            </div>
+            <button class="btn home__btn">contact realtor</button>
+        </div>
+        <div class="home">
+            <img src="/images/nexter/house-3.jpeg" alt="house 3" class="home__img">
+             <svg class="home__like">
+                <use xlink:href="/images/nexter/sprite.svg#icon-heart-full"></use>
+            </svg>
+            <h5 class="home__name">Beautiful House</h5>
+            <div class="home__location">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-map-pin"></use>
+                </svg>
+                <p>USA</p>
+            </div>
+            <div class="home__rooms">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-profile-male"></use>
+                </svg>
+                <p>5 rooms</p>
+            </div>
+            <div class="home__area">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-expand"></use>
+                </svg>
+                <p>325 m<sup>2</sup></p>
+            </div>
+            <div class="home__price">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-key"></use>
+                </svg>
+                <p>$1,200,000</p>
+            </div>
+            <button class="btn home__btn">contact realtor</button>
+        </div>
+        <div class="home">
+            <img src="/images/nexter/house-4.jpeg" alt="house 4" class="home__img">
+             <svg class="home__like">
+                <use xlink:href="/images/nexter/sprite.svg#icon-heart-full"></use>
+            </svg>
+            <h5 class="home__name">Beautiful House</h5>
+            <div class="home__location">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-map-pin"></use>
+                </svg>
+                <p>USA</p>
+            </div>
+            <div class="home__rooms">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-profile-male"></use>
+                </svg>
+                <p>5 rooms</p>
+            </div>
+            <div class="home__area">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-expand"></use>
+                </svg>
+                <p>325 m<sup>2</sup></p>
+            </div>
+            <div class="home__price">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-key"></use>
+                </svg>
+                <p>$1,200,000</p>
+            </div>
+            <button class="btn home__btn">contact realtor</button>
+        </div>
+        <div class="home">
+            <img src="/images/nexter/house-5.jpeg" alt="house 5" class="home__img">
+             <svg class="home__like">
+                <use xlink:href="/images/nexter/sprite.svg#icon-heart-full"></use>
+            </svg>
+            <h5 class="home__name">Beautiful House</h5>
+            <div class="home__location">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-map-pin"></use>
+                </svg>
+                <p>USA</p>
+            </div>
+            <div class="home__rooms">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-profile-male"></use>
+                </svg>
+                <p>5 rooms</p>
+            </div>
+            <div class="home__area">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-expand"></use>
+                </svg>
+                <p>325 m<sup>2</sup></p>
+            </div>
+            <div class="home__price">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-key"></use>
+                </svg>
+                <p>$1,200,000</p>
+            </div>
+            <button class="btn home__btn">contact realtor</button>
+        </div>
+        <div class="home">
+            <img src="/images/nexter/house-6.jpeg" alt="house 6" class="home__img">
+             <svg class="home__like">
+                <use xlink:href="/images/nexter/sprite.svg#icon-heart-full"></use>
+            </svg>
+            <h5 class="home__name">Beautiful House</h5>
+            <div class="home__location">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-map-pin"></use>
+                </svg>
+                <p>USA</p>
+            </div>
+            <div class="home__rooms">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-profile-male"></use>
+                </svg>
+                <p>5 rooms</p>
+            </div>
+            <div class="home__area">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-expand"></use>
+                </svg>
+                <p>325 m<sup>2</sup></p>
+            </div>
+            <div class="home__price">
+                <svg>
+                    <use xlink:href="/images/nexter/sprite.svg#icon-key"></use>
+                </svg>
+                <p>$1,200,000</p>
+            </div>
+            <button class="btn home__btn">contact realtor</button>
+        </div>
     </section>
     <section class="gallery">
-        Gallary
+        <figure class="gallery__item gallery__item--1">
+             <img src="/images/nexter/gal-1.jpeg" alt=" gallery image 1" class="gallery__img">
+        </figure>
+                <figure class="gallery__item gallery__item--2">
+             <img src="/images/nexter/gal-2.jpeg" alt=" gallery image 2" class="gallery__img">
+        </figure>
+                <figure class="gallery__item gallery__item--3">
+             <img src="/images/nexter/gal-3.jpeg" alt=" gallery image 3" class="gallery__img">
+        </figure>
+                <figure class="gallery__item gallery__item--4">
+             <img src="/images/nexter/gal-4.jpeg" alt=" gallery image 4" class="gallery__img">
+        </figure>
+                <figure class="gallery__item gallery__item--5">
+             <img src="/images/nexter/gal-5.jpeg" alt=" gallery image 5" class="gallery__img">
+        </figure>
+                <figure class="gallery__item gallery__item--6">
+             <img src="/images/nexter/gal-6.jpeg" alt=" gallery image 6" class="gallery__img">
+        </figure>
+                <figure class="gallery__item gallery__item--7">
+             <img src="/images/nexter/gal-7.jpeg" alt=" gallery image 7" class="gallery__img">
+        </figure>
+                <figure class="gallery__item gallery__item--8">
+             <img src="/images/nexter/gal-8.jpeg" alt=" gallery image 8" class="gallery__img">
+        </figure>
+                <figure class="gallery__item gallery__item--9">
+             <img src="/images/nexter/gal-9.jpeg" alt=" gallery image 9" class="gallery__img">
+        </figure>
+                <figure class="gallery__item gallery__item--10">
+             <img src="/images/nexter/gal-10.jpeg" alt=" gallery image 10" class="gallery__img">
+        </figure>
+                <figure class="gallery__item gallery__item--11">
+             <img src="/images/nexter/gal-11.jpeg" alt=" gallery image 11" class="gallery__img">
+        </figure>
+                <figure class="gallery__item gallery__item--12">
+             <img src="/images/nexter/gal-12.jpeg" alt=" gallery image 12" class="gallery__img">
+        </figure>
+                <figure class="gallery__item gallery__item--13">
+             <img src="/images/nexter/gal-13.jpeg" alt=" gallery image 13" class="gallery__img">
+        </figure>   
+        <figure class="gallery__item gallery__item--14">
+             <img src="/images/nexter/gal-14.jpeg" alt=" gallery image 14" class="gallery__img">
+        </figure>
+       
     </section>
     <footer class="footer">
-        Footer
+        <ul class="nav">
+            <li class="nav__item"><a href="#" class="nav__link">Find your dream home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Request proposal</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Download home planner</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Submit your property</a></li>
+        </ul>
+        <p class="copyright">
+            &copy; Copyright 2017 by Huy Nguyen Tuan. Feel free to use this template to any project
+        </p>
     </footer>
 </body>
 </html>

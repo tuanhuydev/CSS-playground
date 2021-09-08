@@ -4,7 +4,12 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon node app"
+    "dev": "nodemon node app",
+    "start": "node app"
+  },
+
+  "engines": {
+    "node": "14.x"
   },
   "author": "",
   "license": "ISC",

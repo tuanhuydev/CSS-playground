@@ -5,7 +5,6 @@ const sassMiddleware = require('node-sass-middleware')
 const webRouter = require('./src/routers/web');
 
 const app = express();
-const port = 3000;
 
 /**
  * Note: you must place sass-middleware *before* `express.static`
@@ -45,6 +44,7 @@ app.use('/', webRouter);
 /**
  * Serve application
  */
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Server is listenning at http://localhost:${port}`);
 });

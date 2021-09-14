@@ -1,0 +1,172 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+body {
+  line-height: 1.6rem; }
+
+/* Force transparent autofill input */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #FFF inset !important; }
+
+html {
+  font-family: "Roboto", sans-serif; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9.4rem;
+  padding: 2.8rem 11.4rem 2.8rem 9.6rem;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.1); }
+  .navbar__nav {
+    display: flex;
+    list-style: none; }
+    .navbar__nav .navbar-nav__item:not(:last-child) {
+      margin-right: 4.8rem; }
+    .navbar__nav .navbar-nav__link {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #707070;
+      font-size: 1.4rem;
+      line-height: 1.9rem; }
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  background: no-repeat url("../../images/partswise/background.png");
+  background-position-x: -3rem;
+  padding-top: 5vh; }
+
+.form {
+  align-self: flex-start;
+  margin-left: 5vw;
+  padding: 6.5rem 5.5rem;
+  background-color: #FFF;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.1); }
+  .form__header {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    color: #ED1B2F;
+    margin-bottom: 6.5rem; }
+  .form__tabs {
+    list-style: none;
+    display: flex; }
+    .form__tabs .form-tabs__item {
+      padding-bottom: 1.25rem;
+      position: relative; }
+      .form__tabs .form-tabs__item:not(:last-child) {
+        margin-right: 4.6rem; }
+      .form__tabs .form-tabs__item--active .form-tabs__btn {
+        font-weight: bold; }
+      .form__tabs .form-tabs__item--active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #ED1B2F; }
+    .form__tabs .form-tabs__btn {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: #333338;
+      font-size: 1.6rem;
+      line-height: 2.1rem;
+      cursor: pointer; }
+  .form__control {
+    border-radius: 4px;
+    border: 1px solid #DDD;
+    background-color: #FFF;
+    padding: 1.7rem 1.2rem 1.6rem; }
+    .form__control:first-of-type {
+      margin-top: 6rem; }
+    .form__control:not(:last-child) {
+      margin-bottom: 4.5rem; }
+    .form__control:focus-within {
+      border-color: #CCC; }
+    .form__control .form-control__input {
+      border: none;
+      width: 100%;
+      font-size: 1.6rem; }
+      .form__control .form-control__input:focus-visible, .form__control .form-control__input:focus {
+        outline: none;
+        border: none; }
+  .form__actions {
+    display: flex;
+    justify-content: space-between; }
+    .form__actions .form-action__btn {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      cursor: pointer; }
+      .form__actions .form-action__btn--contraint {
+        padding: 1.5rem 6rem;
+        border-radius: 4px;
+        background-color: #ED1B2F;
+        color: #FFF; }
+      .form__actions .form-action__btn--link {
+        display: flex;
+        align-items: center; }
+        .form__actions .form-action__btn--link:hover {
+          text-decoration: underline; }
+
+.banner {
+  max-width: 50%;
+  margin: 15rem 2rem 0 auto; }
+  .banner__img {
+    width: 100%;
+    height: auto; }
+
+.footer {
+  text-align: center;
+  padding: 1.8rem 0 1.7rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.2); }
+  .footer__nav {
+    list-style: none;
+    display: flex;
+    justify-content: center; }
+    .footer__nav .footer-nav__item {
+      padding: 0 8px; }
+      .footer__nav .footer-nav__item:not(:last-child) {
+        position: relative; }
+        .footer__nav .footer-nav__item:not(:last-child)::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 2px;
+          height: 75%;
+          width: 1px;
+          background-color: #3E4B55; }
+    .footer__nav .footer-nav__link {
+      color: #3E4B55;
+      text-transform: capitalize;
+      text-decoration: none;
+      font-size: 1.4rem;
+      line-height: 2rem; }
+  .footer__copyright {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #3E4B55; }

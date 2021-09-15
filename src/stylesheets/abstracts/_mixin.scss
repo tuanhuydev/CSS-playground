@@ -1,3 +1,4 @@
+
 @mixin flexMiddle {
     display: flex;
     align-items: center;
@@ -6,5 +7,9 @@
 @mixin flexColumn {
     display: flex;
     flex-direction: column;
+}
+
+@mixin response($width) {
+    @media (max-width: $width) { @content }
 }
 

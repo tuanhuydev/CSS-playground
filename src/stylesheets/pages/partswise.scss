@@ -25,6 +25,8 @@ html {
 
     &__nav {
         display: flex;
+        align-items: center;
+        height: 100%;
         list-style: none;
 
         .navbar-nav__item {
@@ -39,8 +41,27 @@ html {
             color: #707070;
             font-size: 1.4rem;
             line-height: 1.9rem;
+            
+            &:hover {
+                color: #383838;
+            }
         }
     }
+
+    @include response(60em) {
+        padding: 2.8rem 5vw;
+        justify-content: center;
+        
+        &__nav {
+            display: none;
+        }
+    }
+
+    @include response(65em) {
+        // padding: 2.8rem 5vw;
+    }
+
+
 }
 
 /////////////////////////////
@@ -50,8 +71,13 @@ html {
     flex-grow: 1;
     background: no-repeat url('../../images/partswise/background.png');
     background-position-x: -3rem;
-    // padding-top: 10.5rem;
     padding-top: 5vh;
+
+    @include response(60rem) {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 5vh;
+    }
 }
 
 /////////////////////////////
@@ -114,11 +140,8 @@ html {
     }
 
     &__control {
-        border-radius: 4px;
-        border: 1px solid #DDD;
         background-color: #FFF;
-        padding: 1.7rem 1.2rem 1.6rem;
-
+        
         &:first-of-type {
             margin-top: 6rem;
         }
@@ -132,14 +155,16 @@ html {
         }
 
         .form-control__input {
-            border: none;
             width: 100%;
             font-size: 1.6rem;
+            padding: 1.7rem 1.2rem 1.6rem;
+            border-radius: 4px;
+            border: 1px solid #DDD;
+
             
             &:focus-visible,
             &:focus {
                 outline: none;
-                border: none;
             }
         }
     }
@@ -172,6 +197,12 @@ html {
             }
         }
     }
+
+    @include response(60rem) {
+        align-self: center;
+        margin: 2.5rem;
+        padding: 2.5rem;
+    }
 }
 
 /////////////////////////////
@@ -184,25 +215,37 @@ html {
         width: 100%;
         height: auto;
     }
+
+
+    @include response(48em) {
+        margin: 0;
+    }
+
+    @include response(60em) {
+        max-width: 45%;
+        margin-top: 15rem;
+        display: none;
+    }
 }
 
 /////////////////////////////
 /////// FOOTER
 .footer {
+    @include flexMiddle;
+    flex-direction: column;
+    max-height: 8rem;
     text-align: center;
     padding: 1.8rem 0 1.7rem;
     border-top: 1px solid rgba(#000, 0.2);
 
     &__nav {
         list-style: none;
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(5, minmax(min-content, max-content));
 
         .footer-nav__item {
             padding: 0 8px;
             
-            
-
             &:not(:last-child) {
                 position: relative;
                 
@@ -231,6 +274,13 @@ html {
         font-size: 1.4rem;
         line-height: 2rem;
         color: #3E4B55;
+    }
+
+    @include response(48rem) {
+        .footer-nav__link,
+        &__copyright {
+            font-size: 1.2rem;
+        }
     }
 }
 

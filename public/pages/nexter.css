@@ -1,9 +1,5 @@
 html {
-  box-sizing: border-box;
-  font-size: 62.5%; }
-  @media only screen and (max-width: 75em) {
-    html {
-      font-size: 50%; } }
+  box-sizing: border-box; }
 
 *,
 *::before,
@@ -14,6 +10,20 @@ html {
 
 body {
   line-height: 1.6rem; }
+
+/* Force transparent autofill input */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #FFF inset !important; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
 
 .container {
   display: grid;

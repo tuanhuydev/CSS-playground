@@ -1,9 +1,5 @@
 html {
-  box-sizing: border-box;
-  font-size: 62.5%; }
-  @media only screen and (max-width: 75em) {
-    html {
-      font-size: 50%; } }
+  box-sizing: border-box; }
 
 *,
 *::before,
@@ -23,7 +19,12 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px #FFF inset !important; }
 
 html {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
 
 .wrapper {
   display: flex;

@@ -6,6 +6,12 @@ $color-primary: #ED1B2F;
 
 html {
     font-family: $display-font;
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%; // 1rem = 8px
+    }
 }
 
 .wrapper {

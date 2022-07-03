@@ -1,5 +1,14 @@
 @import '../base/base';
 
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%; // 1rem = 8px
+    }
+}
+
 $color-primary: #C69963;
 $color-primary-dark: #B28451;
 

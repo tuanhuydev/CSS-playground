@@ -14,6 +14,7 @@ app.use(sassMiddleware({
     dest: path.resolve(__dirname, 'public'),
     debug: true,
     force: true,
+    // outputStyle: 'compressed',
     indentedSyntax: false,
     error: (error => console.error(`ERROR: ${error}`)),
 }));

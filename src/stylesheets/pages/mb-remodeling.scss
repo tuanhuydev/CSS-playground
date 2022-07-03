@@ -1,0 +1,265 @@
+@import '../base/utilities';
+@import '../base/typography';
+@import '../abstracts/mixin';
+
+/////////////////////////////
+/////// BASE
+$displayFont: 'Poppins', sans-serif;
+
+$primraryColor: rgb(162, 96, 40);
+$backgroundColor: rgb(245,245,245);
+$primaryTextColor: rgb(30, 30, 30);
+
+$navbarHeight: 12rem;
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: $displayFont;
+    box-sizing: border-box;
+    * {
+        box-sizing: inherit;
+    }
+}
+
+.btn {
+    font-family: $displayFont;
+    outline: none;
+    border: none;
+    transition: all 0.05s;
+    z-index: 1;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    color: $primaryTextColor;
+}
+
+.container {
+ background-color: $backgroundColor;
+}
+
+.text-primary {
+    color: $primraryColor;
+}
+
+.bg-primary {
+    background-color: rgba(219, 219, 219, 0.12);
+}
+
+/////////////////////////////
+/////// NAVBAR
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: $navbarHeight;
+    background-color: $backgroundColor;
+    z-index: 4;
+    padding: 0 6rem;
+}
+
+main {
+    margin-top: $navbarHeight;
+}
+
+section {
+    h3.title {
+        font-size: 2.5rem;
+        color: $primaryTextColor;
+    }
+}
+
+
+.nav-list {
+    list-style-type: none;
+    grid-template-columns: repeat(6, minmax(min-content, auto));
+    column-gap: 2.5rem;
+    display: none;
+
+    @media only screen and (min-width: 1024px) {
+        display: grid;
+    }
+}
+
+.nav-item {
+    font-size: 0.875rem;
+    font-weight: 300;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+/////////////////////////////
+/////// HERO
+.hero {
+    height: calc(100vh - #{$navbarHeight});
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0; 
+        left: 0;
+        width: 100%; height: 100%;
+        background: url('/images/mb-remodeling/hero_bg.webp') no-repeat left;
+        background-size: cover;
+        background-attachment: fixed;
+        filter: brightness(80%);
+    }
+
+    .title {
+        color: #FFF;
+        font-size: 4rem;
+        z-index: 1;
+    }
+
+    .btn-hero {
+        z-index: 1;
+        background-color: $backgroundColor;
+        align-self: baseline;
+        text-transform: capitalize;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+        color: $primaryTextColor;
+        
+        &:hover {
+            color: $primraryColor;
+        }
+    }
+}
+
+/////////////////////////////
+/////// ABOUT US
+.about-us {
+    height: 680px;
+
+    &__content {
+        padding: 4rem 8rem;
+
+        .header {
+            font-size: 2.5rem;
+            color: $primaryTextColor;
+        }
+
+        .paragraph {
+            text-align: left;
+            line-height: 1.2rem;
+            font-size: 0.875rem;
+            color: $primaryTextColor;
+        }
+        button {
+            background-color: $primaryTextColor;
+            color: #FFF;
+            text-transform: capitalize;
+            padding: 0.75rem 1.5rem;
+            font-weight: 100;
+            font-size: 0.875rem;
+        }
+    }
+
+    &__image {
+        position: relative;
+        min-width: 490px;
+        min-height: 490px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: url('/images/mb-remodeling/about_us_bg.webp') no-repeat;
+            background-attachment: fixed;
+            background-size: contain;
+        }
+    }
+}
+
+.why-us {
+    h4 {
+        line-height: 1.41em;
+        font-size: 22px;
+    }
+    p {
+        text-align: center;
+        line-height: 1.7em;
+        font-size: 15px;
+        width: 15rem;
+    }
+}
+
+/////////////////////////////
+/////// SERVICES
+.services {
+    .service {
+        min-height: 500px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        font-size: 1.4rem;
+        font-weight: 500;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            filter: brightness(0.75);
+        }
+    }
+
+    &__kitchens {
+        &::before {
+            background: url('/images/mb-remodeling/services_kitchens.webp') no-repeat center center;
+        }
+    }
+
+    &__bathrooms {
+        &::before {
+            background: url('/images/mb-remodeling/services_bathrooms.webp') no-repeat center center;
+        }
+    }
+
+    &__interiors {
+        &::before {
+            background: url('/images/mb-remodeling/services_interiors.webp') no-repeat center center;
+        }
+    }
+    button {
+        background-color: $primaryTextColor;
+        color: #FFF;
+        text-transform: capitalize;
+        padding: 0.75rem 1.5rem;
+        font-weight: 100;
+        font-size: 0.875rem;
+    }
+}
+
+.customers {
+    h4 {
+        font-size: 6rem;
+        margin: 0;
+    }
+    h5 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+

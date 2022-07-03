@@ -13,4 +13,8 @@ router.get('/partswise', function(req, res) {
     return res.render('partswise');
 });
 
+router.get('/mb-remodeling', function(req, res) {
+    return res.render('mb-remodeling');
+});
+
 module.exports = router;

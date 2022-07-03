@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "nodemon node app",
     "start": "node app.js"
+
   },
   "author": "Huy Nguyen Tuan",
   "license": "ISC",
